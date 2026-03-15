@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.estado-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: left;
+}
+
+.estado-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.estado-container ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  color: #2c3e50;
+}
+
+.estado-container a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.estado-container a:hover {
+  background-color: #2980b9;
+}

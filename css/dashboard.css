@@ -1,0 +1,48 @@
+bbody {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contenedor-dashboard {
+  width: 1000px;
+  margin: auto;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tarjeta {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 30%;
+  border-left: 6px solid #3498db;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+

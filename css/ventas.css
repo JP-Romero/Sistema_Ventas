@@ -1,0 +1,99 @@
+body {
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+.contenedor {
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.volver {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.alerta {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.exito {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.saludo-usuario {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.saludo-usuario h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.saludo-usuario p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.frase-dia {
+  font-style: italic;
+  color: #16a085;
+}

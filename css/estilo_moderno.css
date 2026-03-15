@@ -1,0 +1,422 @@
+/* === CONTENEDOR GENERAL === */
+.layout-pos {
+  display: grid;
+  grid-template-columns: 220px 1fr 320px;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  background-color: #f5f8f7;
+  color: #2a2a2a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === ENCABEZADO === */
+.encabezado-pos {
+  grid-column: 1 / -1;
+  padding: 18px 32px;
+  background-color: #e4edea;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.encabezado-pos h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #268c74;
+}
+.buscadores-panel input,
+.buscadores-panel select {
+  padding: 9px 12px;
+  margin-right: 12px;
+  border: 1px solid #c5d3cf;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: #fff;
+}
+.buscadores-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* === CATEGORÍAS === */
+.categorias-panel {
+  padding: 20px;
+  background-color: #edf4f3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.categoria-btn {
+  background-color: #30bfa2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.categoria-btn:hover {
+  background-color: #268c74;
+}
+
+/* === PRODUCTOS === */
+.productos-panel {
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+.card-producto {
+  background-color: #ffffff;
+  border: 1px solid #d6e3e0;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.card-producto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+.card-producto img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* === CARRITO === */
+.carrito-panel {
+  background-color: #f0f6f5;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+}
+.carrito-panel h3 {
+  font-size: 1.2rem;
+  color: #2a2a2a;
+}
+#carritoLista li {
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d7e2e0;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#carritoLista button {
+  margin-left: 8px;
+  background-color: #30bfa2;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+#carritoLista button.eliminar {
+  background-color: #e26767;
+}
+/* === PANEL DE PAGOS === */
+.panel-pagos {
+  background-color: #edf4f3;
+  padding: 18px;
+  border-left: 1px solid #d8e5e3;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* === BLOQUES DE PAGO INDIVIDUALES === */
+.bloque-pago {
+  background-color: #fdfdfd;
+  border: 1px solid #d7e6e3;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bloque-pago select,
+.bloque-pago input {
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  border: 1px solid #c4d4d1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #2a2a2a;
+  width: 110px;
+}
+
+.bloque-pago button {
+  background-color: #e26767;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.bloque-pago button:hover {
+  background-color: #be5353;
+}
+
+/* === PANEL DE CAMBIO === */
+.panel-cambio p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #2a2a2a;
+}
+
+#btnConfirmarCobro.btn-cobrar-final {
+  background: linear-gradient(to right, #30bfa2, #268c74);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#btnConfirmarCobro:hover {
+  background: linear-gradient(to right, #268c74, #1c6f5b);
+}
+
+.btn-cobrar {
+  background-color: #268c74;
+  padding: 14px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-cobrar:hover {
+  background-color: #1c6f5b;
+}
+.productos-panel,
+.categorias-panel,
+.carrito-panel {
+  transition: all 0.3s ease-in-out;
+}
+.card-producto:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.btn-cobrar {
+  background: linear-gradient(to right, #30bfa2, #268c74);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+/* === RESPONSIVE === */
+
+/* Tablets: reorganizar a columnas flexibles */
+@media (max-width: 1024px) {
+  .layout-pos {
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "encabezado encabezado"
+      "categorias productos"
+      "carrito carrito";
+  }
+
+  .categorias-panel {
+    grid-area: categorias;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .carrito-panel {
+    grid-area: carrito;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .carrito-panel ul {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .btn-cobrar {
+    margin-top: 12px;
+    width: 100%;
+  }
+}
+
+/* Móviles: layout vertical apilado */
+@media (max-width: 768px) {
+  .layout-pos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "encabezado"
+      "categorias"
+      "productos"
+      "carrito";
+  }
+
+  .encabezado-pos h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .buscadores-panel {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .categorias-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .productos-panel {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .card-producto img {
+    max-height: 80px;
+  }
+
+  .carrito-panel {
+    padding: 12px;
+  }
+
+  .btn-cobrar {
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+  }
+}
+/* === RESPONSIVE COBRO === */
+
+@media (max-width: 1024px) {
+  .layout-cobro {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .contenido-cobro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .panel-resumen,
+  .panel-pagos {
+    width: 100%;
+    border: 1px solid #d6eae8;
+    background-color: #fefefe;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  #resumenProductos li {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .bloque-pago {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bloque-pago select,
+  .bloque-pago input {
+    width: 100%;
+  }
+
+  .btn-cobrar-final {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .encabezado-cobro h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .encabezado-cobro p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .panel-cambio p,
+  .totales-resumen p {
+    font-size: 0.95rem;
+  }
+
+  .agregarPagoBtn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #pagosContenedor .bloque-pago {
+    margin-top: 10px;
+  }
+}
+.card-producto {
+  width: 100%;
+  max-width: 180px;
+  margin: 8px;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 auto;
+}
+
+#productosDisponibles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .card-producto {
+    max-width: 100%;
+  }
+
+  .pos-resumen {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .pos-botones {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pos-botones button {
+    width: 100%;
+  }
+}

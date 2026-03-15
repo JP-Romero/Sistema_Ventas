@@ -1,0 +1,165 @@
+/* Reset base */
+body, html {
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Panel izquierdo: menú vertical con iconos SVG */
+.left-panel {
+  flex: 0 0 80px;
+  background: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  gap: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+.left-panel button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 8px;
+}
+.left-panel button:hover,
+.left-panel button:focus {
+  background-color: #1abc9c;
+  outline: none;
+  transform: scale(1.1);
+}
+.left-panel svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  background: white;
+}
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Panel central: imágenes clicables */
+.center-panel {
+  flex: 2;
+  padding: 20px;
+  background: white;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+  gap: 15px;
+  height: 100vh;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+.product-img {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.product-img:hover,
+.product-img:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Panel derecho: lista de productos agregados */
+.right-panel {
+  flex: 1;
+  background: white;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+.right-panel h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2980b9;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.product span {
+  font-weight: 600;
+  color: #34495e;
+}
+.product .qty-controls button {
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-size: 1em;
+  user-select: none;
+}
+.product .qty-controls button:hover,
+.product .qty-controls button:focus {
+  background: #2980b9;
+  outline: none;
+}
+
+/* Totales y botón */
+.totals {
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #e74c3c;
+}
+.cobrar {
+  margin-top: 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+.cobrar:hover,
+.cobrar:focus {
+  background: #c0392b;
+  outline: none;
+}

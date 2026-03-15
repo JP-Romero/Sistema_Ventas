@@ -1,0 +1,201 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+.contenedor {
+  background: white;
+  width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.estado {
+  font-weight: bold;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.estado-activo {
+  background-color: #eafaf1;
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.estado-inactivo {
+  background-color: #fdecea;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.estado-desconocido {
+  background-color: #fdf6e3;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+.paginacion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.paginacion a {
+  margin: 4px;
+  padding: 6px 12px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.paginacion a:hover {
+  background: #bdc3c7;
+}
+
+.filtro-categoria {
+  margin-bottom: 15px;
+}
+
+.filtro-categoria select {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+#busqueda {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#resultado-busqueda ul {
+  list-style: none;
+  background: #fafafa;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+#resultado-busqueda li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.buscador-avanzado {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.buscador-avanzado input,
+.buscador-avanzado button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.buscador-avanzado button {
+  background: #27ae60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acciones-productos {
+  margin: 15px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  transition: background 0.2s ease, transform 0.2s ease;
+  color: white;
+}
+
+.btn svg {
+  width: 14px;
+  height: 14px;
+  fill: white;
+}
+
+.btn.agregar { background-color: #27ae60; }
+.btn.pdf     { background-color: #e67e22; }
+.btn.excel   { background-color: #2980b9; }
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+..btn.mini {
+  padding: 4px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn.mini svg {
+  width: 14px;
+  height: 14px;
+  fill: white;
+}
+
+.btn.mini.editar {
+  background-color: #3498db;
+}
+
+.btn.mini.eliminar {
+  background-color: #e74c3c;
+}
+
+.btn.mini:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
